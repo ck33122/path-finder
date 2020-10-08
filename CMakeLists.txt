@@ -8,7 +8,7 @@ add_executable(path-finder
   src/result.hpp
   src/error.hpp
   src/error.cpp
-  src/log.hpp)
+  src/log.hpp src/field.cpp src/field.hpp src/string-utils.hpp src/file.cpp src/file.hpp src/simple-buffer.hpp)
 target_include_directories(path-finder PRIVATE src)
 target_compile_definitions(path-finder PRIVATE -D_CRT_SECURE_NO_WARNINGS)
 set_target_properties(path-finder PROPERTIES

@@ -18,7 +18,7 @@ namespace pf::log {
     std::vfprintf(stderr, fmt, args);
     va_end(args);
   }
-  inline void error(Error e) {
-    std::fprintf(stderr, "[error] %s\n", to_string(e));
+  inline void critical(Error e) {
+    std::fprintf(stderr, "[critical error] %s. Останов работы приложения.\n", to_string(e));
   }
 } // namespace pf::log
